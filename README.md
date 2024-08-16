@@ -60,14 +60,14 @@ sed -i -e "s|^node *=.*|node = \"tcp://localhost:${WARDEN_PORT}657\"|" $HOME/.wa
 ### Download genesis & addrbook
 
 ```bash
-wget -O $HOME/.warden/config/genesis.json <https://snapshot.kogicking.com/warden-testnet/genesis.json>
-wget -O $HOME/.warden/config/addrbook.json <https://snapshot.kogicking.com/warden-testnet/addrbook.json>
+wget -O $HOME/.warden/config/genesis.json <https://snapshot.logicking.com/warden-testnet/genesis.json>
+wget -O $HOME/.warden/config/addrbook.json <https://snapshot.logicking.com/warden-testnet/addrbook.json>
 ```
 
 ### Set seeds & peers
 
 ```bash
-SEEDS="bda08962882048fea4331fcf96ad02789671700e@warden-testnet-peer.kogicking.com:35656"
+SEEDS="bda08962882048fea4331fcf96ad02789671700e@warden-testnet-peer.logicking.com:35656"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.warden/config/config.toml
 ```
 
