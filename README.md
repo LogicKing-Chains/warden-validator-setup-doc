@@ -152,15 +152,13 @@ sudo systemctl enable wardend
 sudo systemctl restart wardend && sudo journalctl -u wardend -f
 ```
 
-# Wallet
-
 ### Create a wallet
 
 ```bash
 wardend keys add $WALLET
 ```
 
-### Or Restore your keys you have created
+**Or Restore your keys you have created**
 
 ```bash
 wardend keys add $WALLET --recover
